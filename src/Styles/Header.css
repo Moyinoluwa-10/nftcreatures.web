@@ -1,0 +1,148 @@
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+}
+li .nav-links{
+    list-style: none;
+}
+
+.header > nav{
+    width: 100%;
+    height: 80px;
+    background-color: var(--bg-color);
+    box-shadow: 0 0 15px var(--light-text-color);
+}
+.nav-wrapper{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.v-arena-logo{
+    width: 13rem;
+    height: 2rem;
+}
+.nav-links-container {
+    display: flex;
+}
+.nav-links{
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 40px;
+}
+.nav-links:hover{
+    background: var(--dark-orange-color);
+    border: 3px solid black;
+    border-radius: .7rem;
+    color: white !important;
+    transition: 0.3s ease-in;
+}
+
+.nav-toggle-btn{
+    font-size: 3rem;
+    background: var(--bg-color);
+    border: none;
+    display: none;
+    position: absolute;
+    top: 1rem;
+    right: 2.5rem;
+}
+
+/* NAV MODAL STYLE */
+.nav-close-btn{
+    display: none;
+}
+.navModalBackground{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(64, 64, 64, 0.3);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    z-index: 1;
+}
+.navModalContainer{
+    width: 490px;
+    height: 350px;
+    padding: 1rem;
+    margin: 0rem;
+    background-color: var(--bg-color);
+    flex-direction: column;
+}
+.nav-links-mobile{
+    position: relative;
+    top: 20px;
+}
+.navModalContainer .v-arena-logo{
+    display: none;
+}
+
+.nav-links-mobile > .nav-links{
+    margin-top: 1rem;
+}
+.nav-links-mobile > .nav-links:hover{
+    background-color: var(--dark-orange-color);
+    border: 3px solid black;
+    border-radius: .8rem;
+    color: white;
+    transition: 0.3s ease-out;
+}
+.nav-links-mobile > .play-now{
+    background-color: var(--dark-orange-color);
+    border-radius: .8rem;
+    border: 2px solid black;
+}
+.closeNavModal{
+    font-size: 2rem;
+    background: none;
+    border: none;
+    width: 10%;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* REMOVES MODAL FOR LARGER SCREEN */
+@media screen and (min-width:1024px){
+    .navModalContainer{
+        display: none;
+    }
+    .navModalBackground{
+        display: none;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    .nav-links-container{
+        display: none;
+    }
+    .nav-toggle-btn{
+        display: flex;
+    }
+}
+
+@media screen and (max-width:660px) {
+    .v-arena-logo{
+        width: 10rem;
+        height: 1.6rem;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .navModalContainer .v-arena-logo{
+        display: flex;
+        position: absolute;
+        top: 20px;
+        left: 40px;
+        width: 9rem;
+        height: 1.2rem;
+    }
+}

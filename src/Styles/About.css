@@ -1,0 +1,325 @@
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.about-hero {
+  width: 85vw;
+  text-align: center;
+  padding-top: 3rem;
+  font-family: var(--text-family);
+  margin: auto;
+  padding-bottom: 3rem;
+}
+.about-hero h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #272a3a;
+  padding-bottom: 1rem;
+}
+.about-hero p {
+  padding: 0 1rem;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: #808080;
+  font-weight: 500;
+  padding-bottom: 1.5rem;
+}
+.about-hero button {
+  background-color: #f2522e;
+  color: #fffaf5;
+  font-size: 1rem;
+  padding: 0.7rem 3rem;
+  border-radius: 7px;
+  border: 2px solid #272a3a;
+  font-weight: 700;
+}
+.about-hero .header-img2 {
+  display: none;
+}
+.about-hero .header-img {
+  display: none;
+}
+.about-body {
+  width: 100%;
+  background-color: #272a3a;
+}
+.about-mobile {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  place-items: center;
+  padding: auto;
+  padding: 2rem 1rem;
+  text-align: center;
+  row-gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-body h1 {
+  font-size: 2rem;
+  color: white;
+  font-weight: 900;
+  justify-self: center;
+}
+.about-body p {
+  color: #808080;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+.vision {
+  background-color: #feeddd;
+  padding: 4rem 1rem;
+}
+.vision h1,
+.about-team h1,
+.reach-out h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #131626;
+  padding-bottom: 1rem;
+}
+.vision p,
+.about-team p {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #131626;
+  line-height: 1.5;
+  padding-bottom: 1rem;
+}
+.vision button {
+  background-color: #fffaf5;
+  border: 2px solid #131626;
+  padding: 0.7rem 2rem;
+  color: #f2522e;
+  font-size: 1rem;
+  border-radius: 7px;
+  font-weight: 700;
+}
+.about-team {
+  background-color: #fffaf5;
+  padding: 4rem 1rem;
+}
+.about-team h1 span {
+  color: #f2522e;
+}
+.about-team button,
+.reach-out button {
+  border: 2px solid #131626;
+  padding: 0.7rem 2rem;
+  background-color: #f2522e;
+  font-weight: 700;
+  color: #fffaf5;
+  border-radius: 7px;
+}
+.reach-out {
+  background-color: #feeddd;
+  padding: 4rem 1rem;
+}
+.reach-out p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #131626;
+  line-height: 1.5;
+  padding-bottom: 1rem;
+}
+.reach-out a p {
+  padding-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  padding-left: 1rem;
+  margin-top: 1rem;
+}
+.about-desktop {
+  display: none;
+}
+.about-team-img,
+.vision-img,
+.reach-img {
+  display: none;
+}
+.break {
+  display: none;
+}
+@media screen and (min-width: 778px) {
+  .about-hero {
+    width: 70vw;
+
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+  }
+  .about-hero h1 {
+    font-size: 3.75rem;
+    font-weight: 900;
+    padding-bottom: 2rem;
+  }
+  .about-body {
+    display: flex;
+    padding: 3rem 6rem;
+  }
+  .about-body h1 {
+    font-size: 2.5rem;
+  }
+  .about-mobile {
+    display: none;
+  }
+  .about-desktop {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .about-team-img,
+  .vision-img,
+  .reach-img {
+    display: contents;
+  }
+  .vision,
+  .about-team,
+  .reach-out {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 5rem;
+  }
+
+  .vision h1,
+  .about-team h1,
+  .reach-out h1 {
+    font-size: 3.75rem;
+  }
+  .vision p,
+  .about-team p {
+    font-size: 1rem;
+  }
+  .break {
+    display: block;
+  }
+
+  .about-team .about-team-text,
+  .vision .vision-text,
+  .reach-out .reach-text {
+    width: 50%;
+    max-width: 100%;
+  }
+  .vision .vision-img,
+  .about-team .about-team-img,
+  .reach-out .reach-img {
+    width: 50%;
+    max-width: 100%;
+  }
+
+  .about-team {
+    position: relative;
+  }
+  .about-team .about-team-img .img1 {
+    position: absolute;
+    top: 40%;
+    right: 25%;
+    z-index: 100;
+  }
+  .about-team .about-team-img .img2 {
+    position: absolute;
+    top: 25%;
+    right: 10%;
+  }
+  .about-team .about-team-img .img3 {
+    position: absolute;
+    top: 55%;
+    right: 12%;
+  }
+  .contact-container {
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .about-hero {
+    width: 60vw;
+    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+  }
+  .about-hero .header-img2 {
+    display: block;
+    position: absolute;
+    bottom: -2rem;
+    left: -5rem;
+    width: 10rem;
+    z-index: -10;
+  }
+  .about-hero .header-img {
+    display: block;
+    position: absolute;
+    bottom: 4rem;
+    width: 10rem;
+    right: -9rem;
+  }
+  .about-hero h1 {
+    font-size: 4.6875rem;
+
+    padding-bottom: 2rem;
+  }
+  .about-body {
+    display: flex;
+    padding: 3rem 6rem;
+  }
+  .vision,
+  .about-team,
+  .reach-out {
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 5rem 8rem;
+  }
+
+  .vision .vision-img img,
+  .reach-out .reach-img img {
+    height: 30rem;
+    width: 30rem;
+  }
+  .about-team .about-team-img .img1 {
+    position: absolute;
+    top: 25%;
+    right: 30%;
+    z-index: 100;
+    width: 15rem;
+  }
+  .about-team .about-team-img .img2 {
+    position: absolute;
+    top: 6%;
+    right: 15%;
+    width: 15rem;
+  }
+  .about-team .about-team-img .img3 {
+    position: absolute;
+    top: 51%;
+    right: 17%;
+    width: 15rem;
+  }
+  .reach-out {
+    flex-direction: row-reverse;
+  }
+  .about-body h1,
+  .vision h1,
+  .about-team h1,
+  .reach-out h1 {
+    font-size: 4.6875rem;
+  }
+  .about-body p {
+    font-size: 1.5rem;
+  }
+  .vision p,
+  .about-team p {
+    font-size: 1.125rem;
+  }
+  .vision button {
+    background-color: #f2522e;
+
+    color: #fffaf5;
+  }
+}
